@@ -18,8 +18,6 @@ function SignupScreen() {
       Alert.alert('SignUp Failed','Please check the values that you entered');
       setIsAuthenticating(false);
     }
-    
-    
   }
 
   if (isAuthenticating) {
