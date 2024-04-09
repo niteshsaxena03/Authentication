@@ -19,8 +19,9 @@ function LoginScreen() {
         "Login Failed",
         "Invalid ID or Password"
       );
+      setIsAuthenticating(false);
     }
-    setIsAuthenticating(false);
+    
   }
 
   if (isAuthenticating) {

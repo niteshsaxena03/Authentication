@@ -16,9 +16,10 @@ function SignupScreen() {
       authContext.authenticate(token);
     }catch(error){
       Alert.alert('SignUp Failed','Please check the values that you entered');
+      setIsAuthenticating(false);
     }
     
-    setIsAuthenticating(false);
+    
   }
 
   if (isAuthenticating) {
